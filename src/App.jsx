@@ -33,6 +33,7 @@ export default function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="add" element={<AddTodo />} />
+          <Route path="edit/:id" element={<EditTodo />} />
           <Route path="*" element={<ErrorPage/>} />
         </Route>
       </Routes>
